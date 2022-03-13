@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<body>
+	one 
+	two 
+	three
+
+</body>
+<script >
+	function splitString(stringToSplit, separator) {
+		document.body.innerHTML='';
+  		let arrayOfStrings = stringToSplit.split(separator);
+
+  		for (var i = 0; i < arrayOfStrings.length; i++) {
+  			document.body.innerHTML += "<p>"+ arrayOfStrings[i] + "</p>";
+  		}
+  	}
+
+  	splitString(document.body.innerText,' ');
+</script>

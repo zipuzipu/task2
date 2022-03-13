@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<body>
+	<p>First paragraph</p>
+    <p>Last paragraph</p>
+    <table border="1">
+      <tr>
+        <th>id</th>
+        <th>name</th>
+      </tr>
+    </table>
+
+</body>
+<script >
+	function extractData() {
+		let data= [];
+			for (let i = 0; i < document.getElementsByTagName("p").length ; i++) {
+			
+			let text = document.getElementsByTagName("p")[i].textContent;
+			data.push(text);
+			
+		}
+		console.log(data);
+  	}
+
+  	extractData();
+</script>
